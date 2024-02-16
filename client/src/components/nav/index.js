@@ -7,7 +7,7 @@ export default function Navbar() {
       <nav className="bg-white shadow-sm  mb-2">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="/" className="flex items-center overflow-hidden">
-            Code Assessment
+            Code Assessment - Help Desk
           </a>
           <div
             className="hidden w-full md:block md:w-auto"

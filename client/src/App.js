@@ -14,6 +14,7 @@ import { setContext } from "@apollo/client/link/context";
 import Home from "./pages/Home";
 import Navbar from "./components/nav";
 import AdminView from "./pages/AdminView";
+import TicketDetail from "./pages/TicketDetail";
 
 
 const httpLink = createHttpLink({
@@ -44,6 +45,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path='/adminView' element={<AdminView />} />
+            <Route path="/ticket-detail/:id" element={<TicketDetail /> } /> 
           </Routes>
         </div>
       </Router>

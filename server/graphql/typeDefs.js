@@ -11,20 +11,12 @@ const typeDefs = gql`
   }
 
 
-
-
-
-
-
-
-
-
   type Query {
     getTickets: [Ticket]
+    getSpecificTicket(_id: ID!): Ticket
   }
 
-
-
+  
   type Mutation {
 
     createTicket( 
@@ -35,9 +27,6 @@ const typeDefs = gql`
 
     updateTicketState(
     _id: ID!
-    name: String!
-    email: String!
-    description: String!
     status: String!
     ): Ticket
 

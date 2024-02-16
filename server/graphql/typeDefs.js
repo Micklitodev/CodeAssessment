@@ -31,7 +31,6 @@ const typeDefs = gql`
       name: String!
       email: String!
       description: String!
-      status: String!
     ): Ticket
 
     updateTicketState(

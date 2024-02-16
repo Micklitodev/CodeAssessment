@@ -14,8 +14,11 @@ const resolvers = {
     Mutation: {
         createTicket: async (parent, args, context) => {
             try {
-                const createTicket = await Ticket.create(args)
-                return createTicket;
+
+                const newTicket = await Ticket.create(args)
+                console.log(newTicket)
+                return newTicket; 
+                
 
             } catch (err) {
                 console.log(err)

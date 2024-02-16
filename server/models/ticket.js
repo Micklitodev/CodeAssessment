@@ -2,12 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const TicketSchema = new Schema({
-    firstName: {
-        type: String,
-        required: true,
-        trim: true,
-    },
-    lastName: {
+    name: {
         type: String,
         required: true,
         trim: true,
@@ -15,18 +10,17 @@ const TicketSchema = new Schema({
     email: {
         type: String,
         required: true,
-        unique: true,
     },
-    Description: { 
-        type: String, 
-        required: true, 
+    description: {
+        type: String,
+        required: true,
     },
-    Status: {
-        type: String, 
+    status: {
+        type: String,
         default: "new"
     }
 })
 
-const Ticket = mongoose.model("Ticket", TicketSchema); 
+const Ticket = mongoose.model("Ticket", TicketSchema);
 
 module.exports = Ticket; 
